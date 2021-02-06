@@ -46,3 +46,5 @@
 ;; (add-to-list 'exec-path "/home/selcuk/.sdkman/candidates/leiningen/current/bin")
 
 (load-theme 'material t)
+
+(use-package! vmd-mode)

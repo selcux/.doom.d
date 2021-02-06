@@ -61,3 +61,5 @@
 (package! elein)
 ;; (package! eyebrowse)
 (package! material-theme)
+(package! company-tabnine)
+(package! vmd-mode)

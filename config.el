@@ -19,7 +19,7 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Pragmata Pro" :size 18 :slant 'italic)
+(setq doom-font (font-spec :family "Pragmata Pro" :size 18)
       doom-variable-pitch-font (font-spec :family "Operator Mono Lig" :size 16))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
@@ -65,3 +65,8 @@
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
 (global-wakatime-mode)
+
+(setq +lsp-company-backend '(company-lsp :with company-tabnine :separate))
+(after! company
+  (setq company-idle-delay 0
+        company-show-numbers t))
