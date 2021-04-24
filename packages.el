@@ -63,3 +63,4 @@
 (package! material-theme)
 (package! company-tabnine)
 (package! vmd-mode)
+(package! zig-mode)
