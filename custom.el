@@ -43,6 +43,9 @@
   )
 
 (use-package! all-the-icons)
+(setq doom-themes-treemacs-theme "all-the-icons")
+(use-package treemacs-all-the-icons
+  :after treemacs)
 ;; (add-to-list 'exec-path "/home/selcuk/.sdkman/candidates/leiningen/current/bin")
 
 ;; (load-theme 'material t)

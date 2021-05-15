@@ -56,6 +56,7 @@
 (package! wakatime-mode)
 (package! rainbow-delimiters)
 (package! all-the-icons)
+(package! treemacs-all-the-icons)
 ;; (package! racket-mode)
 (package! v-mode)
 (package! elein)
