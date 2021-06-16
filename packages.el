@@ -65,3 +65,8 @@
 (package! company-tabnine)
 (package! vmd-mode)
 (package! zig-mode)
+;; (package! circadian)
+
+;; (package! doom-themes :disable t)
+(package! transpose-frame)
+(package! activity-watch-mode)

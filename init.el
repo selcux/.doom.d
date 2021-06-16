@@ -33,7 +33,7 @@
        ;;(emoji +unicode)  ; 🙂
        ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
-       ;;hydra
+       ;; hydra
        ;;indent-guides     ; highlighted indent columns
        (ligatures +extra +fira +hasklig +iosevka +pragmata-pro)         ; ligatures and symbols to make your code pretty again
        minimap           ; show a map of the code on the side
@@ -184,3 +184,7 @@
        ;;literate
        (default +bindings +smartparens))
 
+(setq +lsp-company-backend '(company-lsp :with company-tabnine :separate))
+(after! company
+  (setq company-idle-delay 0
+        company-show-numbers t))

@@ -20,12 +20,13 @@
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
 (setq doom-font (font-spec :family "PragmataPro Mono Liga" :size 20)
-      doom-variable-pitch-font (font-spec :family "Vollkorn" :size 20))
+      doom-variable-pitch-font (font-spec :family "Iosevka" :size 16))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-snazzy)
+;; (setq doom-theme 'doom-dracula)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -65,8 +66,4 @@
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
 (global-wakatime-mode)
-
-(setq +lsp-company-backend '(company-lsp :with company-tabnine :separate))
-(after! company
-  (setq company-idle-delay 0
-        company-show-numbers t))
+(global-activity-watch-mode)

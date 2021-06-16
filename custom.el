@@ -50,4 +50,16 @@
 
 ;; (load-theme 'material t)
 
+
 (use-package! vmd-mode)
+
+;; (use-package! circadian
+  ;; :config
+  ;; (setq calendar-latitude 41.052311)
+  ;; (setq calendar-longitude 28.990850)
+  ;; (setq circadian-themes '((:sunrise doom-snazzy)
+  ;;                          (:sunset  doom-tomorrow-day)))
+  ;; (circadian-setup))
+
+(after! rustic
+  (setq rustic-format-on-save t))
